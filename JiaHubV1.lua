@@ -96,15 +96,41 @@ repeat
         wait()
 until game.Players
 repeat      
-
-
-
-
-
-
-
-
-
+        wait()
+until game.Players.LocalPlayer
+repeat
+	wait()
+until game.ReplicatedStorage
+repeat
+	wait()
+until game.ReplicatedStorage:FindFirstChild("Remotes");
+repeat
+	wait()
+until game.Players.LocalPlayer:FindFirstChild("PlayerGui");
+repeat
+        wait()
+until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+repeat
+	wait()
+until game:GetService("Players")
+repeat
+	wait()
+until game:GetService("Players").LocalPlayer.Character:FindFirstChild("Energy")
+wait(0.5)
+if not game:IsLoaded() then
+	repeat
+		game.Loaded:Wait()
+        until game:IsLoaded()
+end
+if game.PlaceId == 2753915549 then
+        AnDepZai1 = true
+elseif game.PlaceId == 4442272183 then
+       AnDepZai2 = true
+elseif game.PlaceId == 7449423635 then 
+       AnDepZai3 = true
+else
+       game:GetService("Players").LocalPlayer:Kick("")
+hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death), function()
 
 
 
